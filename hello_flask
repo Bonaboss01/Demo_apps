@@ -1,0 +1,10 @@
+from flask import Flask
+
+my_app = Flask(__name__)   # correct Flask initialization
+
+@my_app.route('/')         # correct decorator spelling
+def hello_world():
+    return "Hello World!"
+
+if __name__ == "__main__":  # correct main block
+    my_app.run(debug=True)
